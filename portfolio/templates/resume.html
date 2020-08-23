@@ -1,0 +1,8 @@
+{% extends 'new_base.html' %}
+
+{% block content %}
+    <h2>My resume</h2>
+    {%load static %}
+    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}" width="80%" height="1000px" style="display:block;margin:auto;">
+    </iframe>
+{% endblock %}
