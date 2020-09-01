@@ -11,9 +11,6 @@ def home(request):
 def projects(request):
     return render(request, 'projects.html')
 
-def project_1(request):
-    return render(request, 'project_1.html')
-
 def resume(request):
     return render(request, 'resume.html')
 
