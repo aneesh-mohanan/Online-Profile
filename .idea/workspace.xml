@@ -4,10 +4,6 @@
     <list default="true" id="36218588-60f2-43b1-9bf2-44f2a4edd62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/certificates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/new_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +21,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gTPF3AV5VehqUFSGVNht7PQMXm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -48,6 +48,9 @@
       <updated>1598135501837</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="6" key="SettingsEditor" timestamp="1598978786240">

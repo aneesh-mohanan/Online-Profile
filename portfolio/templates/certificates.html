@@ -4,34 +4,43 @@
 
 .certificates-section{
   margin: auto;
-  margin-top: 60px;
-  width: 80%;
-  height: 350px;;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  border: 5px solid blue;
-  border-radius: 15px;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }
 
- .certificates-tittle{
+ .certificates-container-tittle{
   position: relative;
   bottom: 10px;
   color: white;
   padding-left: 20px;
   padding-top: 20px;
-  align: center;
+  text-align: left;
   margin:0;
+}
+.certificate-name{
+  padding-bottom:2px;
+  padding-top:8px;
+  padding-right: 40px;
+  color:white;
+  text-align: center;
 }
 
 div.gallery {
-  padding-bottom: 0px;
-  margin: 0px;
+  padding: 10px;
+  padding-right: 0px;
+  margin: auto;
+  width: 100%;
+  height: 90%;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  margin: auto;
+  width: 90%;
+  height: 90%;
 }
 
 * {
@@ -39,11 +48,11 @@ div.gallery img {
 }
 
 .zoom {
-  padding: 20px;
-  transition: transform .2s;
-  width: 100%;
-  height: 300px;
   margin: auto;
+  padding: 5px;
+  transition: transform .2s;
+  width: 90%;
+  height: 300px;
 }
 
 .zoom:hover {
@@ -53,17 +62,17 @@ div.gallery img {
 }
 
 .responsive {
-  padding: 0;
+  padding: 5px;
   float: left;
-  width: 24.99999%;
-  margin: 0;
+  width: 30%;
+  margin: 5px;
 }
 
 @media only screen and (max-width: 700px) {
   .responsive {
-    width: 49.99999%;
+    width: 100%;
     margin: 0;
-padding: 0;
+    padding: 0;
   }
 }
 
@@ -83,7 +92,7 @@ padding: 0;
 {% block content %}
 <div class="certificates-section">
 
-  <h2 class="certificates-tittle">Certificates Gallery</h2>
+  <h2 class="certificates-container-tittle">Certificates Gallery</h2>
   {%load static %}
   <div class="responsive">
     <div class="zoom">
@@ -91,7 +100,7 @@ padding: 0;
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
           <img alt="Certificate" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 align="center" style="padding-bottom:2px;padding-top:8px;color:white;"> Bachelors</h2>
+        <h2 class="certificate-name"> Bachelors</h2>
       </div>
     </div>
   </div>
@@ -102,7 +111,7 @@ padding: 0;
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
         <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 align="center" style="padding-bottom:2px;padding-top:8px;color:white;"> Bachelors</h2>
+        <h2 class="certificate-name"> Bachelors</h2>
       </div>
     </div>
   </div>
@@ -113,21 +122,12 @@ padding: 0;
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
           <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 align="center" style="padding-bottom:2px;padding-top:8px;color:white;"> Bachelors</h2>
+        <h2 class="certificate-name"> Bachelors</h2>
       </div>
     </div>
   </div>
 
-  <div class="responsive">
-    <div class="zoom">
-      <div class="gallery">
-        <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
-          <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
-        </a>
-        <h2 align="center" style="padding-bottom:2px;padding-top:8px;color:white;"> Bachelors</h2>
-      </div>
-    </div>
-  </div>
+
 
 </div>
 {% endblock %}
