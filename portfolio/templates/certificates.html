@@ -1,7 +1,26 @@
 {% extends 'new_base.html' %}
 
 {% block extra_style %}
-    div.gallery {
+
+.certificates-section{
+  margin: auto;
+  margin-top: 60px;
+  width: 80%;
+  height: 100%;
+  border: 5px solid blue;
+  border-radius: 15px;
+}
+
+ .certificates-tittle{
+  position: relative;
+  bottom: 10px;
+  color: #362f2b;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin:0;
+}
+
+div.gallery {
   border: 3px;
 }
 
@@ -60,14 +79,15 @@ div.gallery img {
 {% endblock %}
 
 {% block content %}
+<div class="certificates-section">
 <section style="height:400px;">
-<h2>Certificates Gallery</h2>
+<h2 class="certificates-tittle">Certificates Gallery</h2>
 {%load static %}
 <div class="responsive">
   <div class="zoom">
     <div class="gallery">
-      <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-        <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Cinque Terre">
+      <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
+        <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
       </a>
       <h2 align="center" style="padding-bottom:2px;padding-top:2px;"> Bachelors</h2>
     </div>
@@ -77,8 +97,8 @@ div.gallery img {
 <div class="responsive">
   <div class="zoom">
     <div class="gallery">
-      <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-        <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Cinque Terre">
+      <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
+        <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
       </a>
       <h2 align="center" style="padding-bottom:2px;padding-top:2px;"> Bachelors</h2>
     </div>
@@ -88,8 +108,8 @@ div.gallery img {
 <div class="responsive">
   <div class="zoom">
     <div class="gallery">
-      <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-        <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Cinque Terre">
+      <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
+        <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
       </a>
       <h2 align="center" style="padding-bottom:2px;padding-top:2px;"> Bachelors</h2>
     </div>
@@ -99,12 +119,14 @@ div.gallery img {
 <div class="responsive">
   <div class="zoom">
     <div class="gallery">
-      <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-        <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Cinque Terre">
+      <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
+        <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
       </a>
       <h2 align="center" style="padding-bottom:2px;padding-top:2px;"> Bachelors</h2>
     </div>
   </div>
 </div>
 </section>
+
+</div>
 {% endblock %}

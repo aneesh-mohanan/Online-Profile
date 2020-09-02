@@ -1,8 +1,30 @@
 {% extends 'new_base.html' %}
+{% block extra_style %}
 
+.resume-section{
+  margin: auto;
+  margin-top: 60px;
+  width: 80%;
+  height: 100%;
+  border: 5px solid blue;
+  border-radius: 15px;
+}
+
+ .resume-tittle{
+  position: relative;
+  bottom: 10px;
+  color: #362f2b;
+  padding-left: 20px;
+padding-top: 20px;
+  margin:0;
+}
+
+{% endblock %}
 {% block content %}
-    <h2>My resume</h2>
+<div class="resume-section">
+    <h2 class="resume-tittle">My resume</h2>
     {%load static %}
-    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}#toolbar=0" width="80%" height="1000px" style="display:block;margin:auto;">
+    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}#toolbar=0" width="80%" height="1000px" style="display:block;margin:auto;margin-bottom:20px;">
     </iframe>
+</div>
 {% endblock %}
