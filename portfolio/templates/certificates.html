@@ -4,7 +4,7 @@
 
 .certificates-section{
   margin: auto;
-  margin-top: 40px;
+  margin-top: 10px;
   width: 100%;
   height: auto;
   padding-left: 0px;
@@ -26,6 +26,7 @@
   padding-top:8px;
   padding-right: 40px;
   color:white;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -64,7 +65,7 @@ div.gallery img {
 .responsive {
   padding: 5px;
   float: left;
-  width: 30%;
+  width: 25%;
   margin: 5px;
 }
 
@@ -93,6 +94,8 @@ div.gallery img {
 <div class="certificates-section">
 
   <h2 class="certificates-container-tittle">Certificates Gallery</h2>
+  <div style="width:100%;padding-left:60px;">
+
   {%load static %}
   <div class="responsive">
     <div class="zoom">
@@ -100,7 +103,7 @@ div.gallery img {
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
           <img alt="Certificate" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 class="certificate-name"> Bachelors</h2>
+        <h2 class="certificate-name"> Post-Graduate</h2>
       </div>
     </div>
   </div>
@@ -111,7 +114,7 @@ div.gallery img {
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
         <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 class="certificate-name"> Bachelors</h2>
+        <h2 class="certificate-name">Bachelors</h2>
       </div>
     </div>
   </div>
@@ -122,12 +125,13 @@ div.gallery img {
         <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
           <img alt="Cinque Terre" src="{% static 'images/Aneesh profile picture.jpg' %}">
         </a>
-        <h2 class="certificate-name"> Bachelors</h2>
+        <h2 class="certificate-name">NIIT</h2>
       </div>
     </div>
   </div>
 
 
+</div>
 
 </div>
 {% endblock %}

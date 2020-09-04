@@ -4,6 +4,10 @@
     <list default="true" id="36218588-60f2-43b1-9bf2-44f2a4edd62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/certificates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/resume.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/new_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
