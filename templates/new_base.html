@@ -39,7 +39,8 @@ h2 {
 .profile-name{
   position: relative;
   left: 20px;
-  top: 15px;
+  top: 0px;
+  bottom: 25px;
   font-family: "Sofia";
   color: yellow;
 }
@@ -89,7 +90,7 @@ p {
 .profile-picture {
   position: relative;
   left: 10px;
-  top: 10px;
+  top: 14px;
   right:0;
   max-width: 90%;
   max-height: 90%;
@@ -146,12 +147,13 @@ text-decoration: underline;
     align-item: stretch;
     padding: 0px;
     margin:0;
+    height: 60px;
 }
 
 /* the entire header section */
 .header-section > div {
     width: calc(100% / 2);
-    height: 100px;
+    height: 60px;
 }
 
 /*Social media button styleing*/
@@ -193,7 +195,7 @@ text-decoration: underline;
 <div class="header-section">
     <div class="header">
        {%load static %}
-        <img class="profile-picture" src="{% static 'images/Aneesh profile picture.jpg' %}">
+        <img class="profile-picture" src="{% static 'images/profile-photo.jpg' %}">
         <h1 class="profile-name">Aneesh Mohanan</h1>
     </div>
     <div class="topnav">
@@ -204,6 +206,7 @@ text-decoration: underline;
     </div>
 </div>
 
+<hr>
 
 <div class="content">
     {% block content %}
