@@ -2,19 +2,19 @@
 {% block extra_style %}
 
 .resume-section{
-  margin: auto;
-  margin-top: 10px;
-  width: 90%;
-  height: 100%;
+margin: auto;
+margin-top: 10px;
+width: 90%;
+height: 100%;
 }
 
- .resume-tittle{
-  position: relative;
-  bottom: 10px;
-  color: white;
-  padding-left: 110px;
-  padding-top: 20px;
-  margin:0;
+.resume-tittle{
+position: relative;
+bottom: 10px;
+color: white;
+padding-left: 110px;
+padding-top: 20px;
+margin:0;
 }
 
 {% endblock %}
@@ -22,7 +22,8 @@
 <div class="resume-section">
     <h2 class="resume-tittle">My resume</h2>
     {%load static %}
-    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}#toolbar=0" width="80%" height="1000px" style="display:block;margin:auto;margin-bottom:20px;">
+    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}#toolbar=0" width="80%" height="1000px"
+            style="display:block;margin:auto;margin-bottom:20px;">
     </iframe>
 </div>
 {% endblock %}

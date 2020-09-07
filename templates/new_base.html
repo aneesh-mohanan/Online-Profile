@@ -101,7 +101,7 @@ p {
 /* Style the top navigation bar */
 .topnav {
   overflow: auto;
-  background-color: green;
+  background-color: #32b4db;
   padding-top: 70px;
   margin: 0px;
   height: 60px;
@@ -135,7 +135,7 @@ text-decoration: underline;
   height: 100%;
   padding: 40px;
   padding-top: 0px;
-  background-color: red;
+  background-color: #32b4db;
 }
 
 
@@ -188,13 +188,15 @@ text-decoration: underline;
   }
 }
 
+
+
     </style>
 </head>
 <body>
 <!-- Dividing header to two parts-->
 <div class="header-section">
     <div class="header">
-       {%load static %}
+        {%load static %}
         <img class="profile-picture" src="{% static 'images/profile-photo.jpg' %}">
         <h1 class="profile-name">Aneesh Mohanan</h1>
     </div>
@@ -207,7 +209,6 @@ text-decoration: underline;
 </div>
 
 
-
 <div class="content">
     {% block content %}
     {% endblock %}
@@ -215,7 +216,8 @@ text-decoration: underline;
 
 <div class="footer">
     <a href="mailto:aneeshcm18@gmail.com" class="fa fa-envelope"></a>
-    <a href="https://www.linkedin.com/in/aneeshmohanan/" class="fa fa-linkedin-square" style="padding-top:1px;font-size:30px;color:blue;width:34px;"></a>
+    <a href="https://www.linkedin.com/in/aneeshmohanan/" class="fa fa-linkedin-square"
+       style="padding-top:1px;font-size:30px;color:blue;width:34px;"></a>
 </div>
 
 </body>
