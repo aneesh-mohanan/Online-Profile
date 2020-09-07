@@ -5,8 +5,12 @@
   margin: auto;
   padding: 5px;
   width: 75%;
-  height: 300px;
+  height: 380px;
   overflow: auto;
+}
+
+.h2{
+padding-top: 4px;
 }
 
 .project-heading{
@@ -22,6 +26,8 @@
  display: block;
  width: 98%;
  height: 100%;
+ overflow: hidden;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image {
@@ -36,10 +42,10 @@
 .project-details {
   margin: 0px;
   margin-bottom: 0px;
-  padding-top: 8px;
+  padding-top: 14px;
   width: 50%;
   height: 100%;
-  background: blue;
+  background: #87a9e0;
   float: right;
 }
 
@@ -49,26 +55,12 @@
   object-fit: fill;
 }
 
-.goto-button{
-  position: relative;
+.icon{
   float: right;
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.goto-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  margin-top: 160px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
 }
 
 {% endblock %}
@@ -86,7 +78,7 @@
     <article class="project-details">
       <h2>Portfolio</h2>
       <p>An online portfolio page to showcase insights about me on a professional basis and also includes all the projects developed so far.</p>
-      <button class="goto-button"><a href="http://aneeshmohanan.pythonanywhere.com/" target="_blank"> Go to the site..</a></button>
+      <a href="http://aneeshmohanan.pythonanywhere.com/" target="_blank"><img class="icon" src="https://img.icons8.com/bubbles/100/000000/domain.png"/></a>
     </article>
   </div>
 </article>
