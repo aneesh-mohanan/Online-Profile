@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36218588-60f2-43b1-9bf2-44f2a4edd62a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/Calicut.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Conestoga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/IndiaOptions.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Kites.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/NIIT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Online profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/Oracle.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/certificates.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/resume.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/new_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

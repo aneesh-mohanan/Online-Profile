@@ -26,7 +26,8 @@ padding-top: 4px;
  margin: auto;
  display: block;
  width: 98%;
- height: 100%;
+ height: 80%;
+ background: #87a9e0;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -34,9 +35,10 @@ padding-top: 4px;
   margin: 0px;
   padding: 0px;
   width: 50%;
-  height: 100%;
-  background: red;
+  height: 298px;
+  background: #87a9e0;
   float:left;
+  object-fit: fill;
 }
 
 .project-details {
@@ -52,14 +54,14 @@ padding-top: 4px;
 
 .image {
   width: 100%;
-  height:100%;
+  height: 296px;
   object-fit: fill;
 }
 
 .icon{
   position: relative;
   float: right;
-  margin-top: 160px;
+  margin-top: 80px;
   margin-right: 10px;
   width: 80px;
   height: 80px;
@@ -83,8 +85,8 @@ padding-top: 4px;
   <div class="project-contents">
     <article class="project-image">
        {%load static %}
-       <a href="{% static 'images/Aneesh profile picture.jpg' %}" target="_blank">
-          <img class="image" alt="Certificate" src="{% static 'images/Aneesh profile picture.jpg' %}">
+       <a href="{% static 'images/Online profile.jpg' %}" target="_blank">
+          <img class="image" alt="Certificate" src="{% static 'images/Online profile.jpg' %}">
         </a>
     </article>
     <article class="project-details">
