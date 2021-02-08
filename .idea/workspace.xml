@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36218588-60f2-43b1-9bf2-44f2a4edd62a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/new_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612749153454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1612749153454" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612722805465">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
