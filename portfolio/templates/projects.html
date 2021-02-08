@@ -1,129 +1,100 @@
 {% extends 'new_base.html' %}
 
 {% block extra_style %}
-    div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
+.all-projects {
+  position: relative;
+  margin: auto;
   padding: 5px;
-  padding-top: 0px;
-  text-align: center;
-  color: white;
-  height: 50px;
+  width: 75%;
+  height: 380px;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.read-more-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-padding:3px;
+.h2{
+padding-top: 4px;
 }
 
-* {
-  box-sizing: border-box;
+.project-heading{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 180px;
+  padding: 10px;
+  color: white;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.project-contents{
+ margin: auto;
+ display: block;
+ width: 98%;
+ height: 80%;
+ background: #87a9e0;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+.project-image {
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  height: 298px;
+  background: #87a9e0;
+  float:left;
+  object-fit: fill;
+}
+
+.project-details {
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-top: 14px;
+  width: 50%;
+  height: 100%;
+  background: #87a9e0;
+  float: right;
+  object-fill: contain;
+}
+
+.image {
+  width: 100%;
+  height: 296px;
+  object-fit: fill;
+}
+
+.icon{
+  position: relative;
+  float: right;
+  margin-top: 80px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width:600px) {
+  .all-projects {
+    width: 98%;
+    height:280px;
+    margin: auto;
+    padding: 0px;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 {% endblock %}
 
 {% block content %}
-    <h2>Recent Projects</h2>
-    {%load static %}
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-      <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <h2 align="center" style="padding-bottom:2px;"> Bachelors</h2>
-    <div class="desc">
-      <p style="padding:3px;padding-top:1px;">this is where description comes</span>
-      </p>
-    </div>
-    <div class="read-more-button">
-      <button onclick="window.location.href='/portfolio/project_1';">Read more</button>
-    </div>
-
+<h2 class="project-heading">Projects</h2>
+<article class="all-projects">
+  <div class="project-contents">
+    <article class="project-image">
+       {%load static %}
+       <a href="{% static 'images/Online profile.jpg' %}" target="_blank">
+          <img class="image" alt="Certificate" src="{% static 'images/Online profile.jpg' %}">
+        </a>
+    </article>
+    <article class="project-details">
+      <h2>Portfolio</h2>
+      <p>An online portfolio page to showcase insights about me on a professional basis and also includes all the projects developed so far.</p>
+      <a href="http://aneeshmohanan.pythonanywhere.com/" target="_blank"><img class="icon" src="https://img.icons8.com/bubbles/100/000000/domain.png"/></a>
+    </article>
   </div>
-</div>
+</article>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-      <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Post graduation</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-      <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="{% static 'images/Aneesh profile picture.jpg' %}">
-      <img src="{% static 'images/Aneesh profile picture.jpg' %}" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<!-- Java script to connect read more button to its function -->
-<script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-</script>
 {% endblock %}

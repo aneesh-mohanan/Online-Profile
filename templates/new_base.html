@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
 
     {% block extra_style %}
@@ -15,54 +17,74 @@
 
 body {
   margin: 0;
-  background-color: #362f2b;
+  padding: 1px;
+  background-color: #32b4db;
 }
 
 h1 {
   position: relative;
   bottom: 20px;
   color: #38a8e0;
+  font-family: Arial, sans-serif;
 }
 
 h2 {
   position: relative;
   bottom: 10px;
-  color: #362f2b;
+  color: white;
   padding-left: 20px;
   margin:0;
+  font-family: Verdana, sans-serif;
 }
 
 .profile-name{
   position: relative;
   left: 20px;
-  top: 15px;
-  color: white;
+  top: 25px;
+  bottom: 25px;
+  font-family: "Arial";
+  color: yellow;
 }
 
 p {
   position: relative;
+  margin: auto;
+  width: 100%;
   bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 30px;
   text-align: justify;
-  color: #362f2b;
+  color: white;
+  font-family: Verdana, sans-serif;
 }
 
 .links {
-  color: blue;
+  color: black;
   font-size: 20px;
 }
 
 /* Style the complete header section */
 .header {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
   padding: 0px;
   margin:0px;
-  height: 20px;
-
-
+  border-bottom: solid yellow;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  background-color: yellow;
+  color: white;
+  margin: 0px;
+  float: left;
+}
+
 
 /*Style the profile picture */
 .profile-picture {
@@ -71,19 +93,20 @@ p {
   top: 10px;
   right:0;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 88%;
   border-radius: 50%;
-  padding-bottom: 3px;
+  padding-bottom: 0px;
   margin:0;
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: auto;
-  background-color: #38a8e0;
+  background-color: #32b4db;
+  padding-top: 70px;
   margin: 0px;
-  height: 30px;
-  float: left;
+  height: 60px;
+  float: right;
   width: 100%;
 }
 
@@ -91,49 +114,64 @@ p {
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: yellow;
   text-align: center;
   width: 25%;
   padding: 5px 0px;
+  font-family: Verdana, sans-serif;
   text-decoration: none;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+text-decoration: underline;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
+/* Create content style*/
+.content {
+  margin: auto;
+  margin-top: 35px;
+  display: block;
   width: 100%;
   height: 100%;
-  padding: 30px;
-  background-color: #ceddf5;
+  padding: 40px;
+  padding-top: 0px;
+  background-color: #32b4db;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* the individual portion of header */
+/* the entire portion of header */
 .header-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-item: stretch;
     padding: 0px;
-    margin:0;
+    margin:0px;
+
 }
 
-/* the entire header section */
+/* the division of header section */
 .header-section > div {
     width: calc(100% / 2);
     height: 100px;
+}
+
+/*Social media button styleing*/
+.fa {
+  float: right;
+  position: relative;
+  font-size: 30px;
+  width: 35px;
+  height: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+  margin-right: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -145,10 +183,16 @@ p {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
-  .column {
+  .content {
     width: 100%;
+    height:100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0px;
   }
 }
+
+
 
     </style>
 </head>
@@ -156,30 +200,28 @@ p {
 <!-- Dividing header to two parts-->
 <div class="header-section">
     <div class="header">
-       {%load static %}
-        <img class="profile-picture" src="{% static 'images/Aneesh profile picture.jpg' %}">
+        {%load static %}
+        <img class="profile-picture" src="{% static 'images/profile-photo.jpg' %}">
         <h1 class="profile-name">Aneesh Mohanan</h1>
     </div>
-    <div style="background-color: #362f2b; padding: 20px; text-align: right;">
-        <i class="fa fa-envelope" style="font-size:18px;color:#38a8e0;padding-right:10px;"> aneeshcm18@gmail.com</i>
-        <br>
-        <i class="fa fa-phone" style="font-size:18px;color:#38a8e0;padding-right:10px;"> 519-588-8458</i>
-        <br>
-        <i class="fa fa-linkedin-square" style="font-size:18px;color:#38a8e0;padding-right:10px;"><a class="links" href="https:python mwww.linkedin.com/in/aneeshmohanan"  target="_blank"> LinkedIn</a></i>
+    <div class="topnav">
+        <a href="/home">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/resume">Resume</a>
+        <a href="/certificates">Certificates</a>
     </div>
 </div>
 
 
-<div class="topnav">
-    <a href="/portfolio/home">Home</a>
-    <a href="/portfolio/projects">Projects</a>
-    <a href="/portfolio/resume">Resume</a>
-    <a href="/portfolio/certificates">Certificates</a>
-</div>
-
-<div class="column">
+<div class="content">
     {% block content %}
     {% endblock %}
+</div>
+
+<div class="footer">
+    <a href="mailto:aneeshcm18@gmail.com" class="fa fa-envelope"></a>
+    <a href="https://www.linkedin.com/in/aneeshmohanan/" class="fa fa-linkedin-square"
+       style="padding-top:1px;font-size:30px;color:blue;width:34px;"></a>
 </div>
 
 </body>

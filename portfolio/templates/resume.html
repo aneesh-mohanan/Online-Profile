@@ -1,8 +1,56 @@
 {% extends 'new_base.html' %}
+{% block extra_style %}
 
+.resume-section{
+margin: auto;
+margin-top: 10px;
+width: 65%;
+height: 100%;
+padding-top: 10px;
+}
+
+.resume-tittle{
+position: relative;
+bottom: 10px;
+color: white;
+padding-left: 80px;
+padding-top: 20px;
+margin:auto;
+}
+
+.pdf-style{
+  width: 100%;
+  height: 1050px;
+  display: block;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width:600px) {
+  .pdf-style {
+    width: 88%;
+    height:525px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .resume-section {
+    width: 98%;
+    height:400px;
+    margin: auto;
+    padding: 0px;
+  }
+}
+
+{% endblock %}
 {% block content %}
-    <h2>My resume</h2>
+<div class="resume-section">
+    <h2 class="resume-tittle">My resume</h2>
     {%load static %}
-    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}" width="80%" height="1000px" style="display:block;margin:auto;">
-    </iframe>
+    <iframe src="{% static 'pdf files/Aneesh Mohanan.pdf' %}#toolbar=0" class="pdf-style"> </iframe>
+</div>
 {% endblock %}
